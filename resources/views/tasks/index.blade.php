@@ -33,9 +33,17 @@ td {
 a {
   margin-right: 20px;
 }
+
+.task__add {
+  text-align: right;
+  padding-bottom: 10px;
+}
 </style>
 <h1>タスク一覧</h1>
 <div class="container">
+  <div class="task__add">
+    <a href="{{ route('tasks.add') }}">＋タスクを追加する</a>
+  </div>
   <table>
     <tr>
       <th>タスク</th>
